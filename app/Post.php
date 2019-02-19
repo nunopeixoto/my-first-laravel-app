@@ -10,4 +10,8 @@ class Post extends Model
     //protected $table = 'other name'
     
     public $primaryKey = 'id'; //pk
+
+    public function user(){
+        return $this->belongsTo('App\User');
+    }
 }
